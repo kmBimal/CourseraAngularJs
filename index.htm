@@ -1,7 +1,25 @@
-<html>
-<title>Hallo Angular
+<html >
+<head>
+<title>Hallo Angular 1.5
 </title>
-<body>
-Welcome To My First Page with Angular JS
+<script src="scripts/angular.min.js" ></script>
+<script src="scripts/app.js" ></script>
+</head>
+<body ng-app="assignment1Module">
+  <div style="border:1px solid black;padding:10px;width:500px" ng-controller="asnmtController">
+    <div  style="dissplay:inline;width:450px;height:75px;">
+      <label>
+        <span style="float:left;width:200px">Please enter names of items you usually eat for lunch (each one seperated by comma): </span>
+        <span style="float:right;width:200px"><input type="text" name="txtFoodList" ng-model="FoodList"></input></span>
+      </label>
+    </div>
+    <div style="display:block;padding:5px;margin-top:5px;margin-bottom:5px;color:blue;text-align:center">
+      <label>
+      {{message}}
+      </label>
+    </div>
+    <input type="button" style="width:150px" value="Check If Too Much" name="btnProcessme" ng-click="processData();"></button>
+
+  </div>
 </body>
 </html>
