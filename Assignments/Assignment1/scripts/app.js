@@ -2,7 +2,7 @@
   'use strict';
   var module = angular.module('assignment1Module', []);
   //Begin asnmtController
-  function asnmtController($scope){
+  var asnmtController = function ($scope){
     $scope.FoodList = "";
     //Begin processData
     $scope.processData = function(btn){
@@ -28,6 +28,6 @@
 //Add asnmtController to the module
 module.controller('asnmtController', asnmtController);
 //Inject scope service to the asnmtController function
-asnmtController.$inject('$scope');
+asnmtController.$inject = ['$scope'];
 
 })();
