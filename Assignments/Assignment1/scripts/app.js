@@ -29,5 +29,5 @@
 module.controller('asnmtController', asnmtController);
 //Inject scope service to the asnmtController function
 asnmtController.$inject = ['$scope'];
-
+//not sure why build failed
 })();
